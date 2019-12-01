@@ -52,7 +52,9 @@ body {
   font-size: 14px;
 }
 .aside__heading {
-  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
 }
 .aside__imgContainer {
   display: none;
@@ -124,6 +126,9 @@ body {
 
 .icon__dot {
   padding: 0 0.05em;
+}
+.icon__aside {
+  padding: 0 0.2em;
 }
 
 .footer {
