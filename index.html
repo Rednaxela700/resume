@@ -176,12 +176,9 @@
                         </li>
                     </ul>
                 </section>
-                <section class="section section__certificates">
-                    <h2 class="heading section__heading">Certificates</h2>
-                    <div class="feature__wrapper">
-                        <a href="https://www.linkedin.com/company/certiport/" class="link">IC PHP Developer</a>
-                    </div>
-                </section>
+                <footer class="footer">
+                    I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament's and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive).
+                </footer>
             </div>
         </article>
         <aside class="aside">
@@ -269,13 +266,20 @@
             </section>
         </aside>
     </main>
+
 </div>
 <script>
 
     const show = document.getElementById('header__picture--show');
+    showDefaultText = 'Show Picture';
+    show.innerText = showDefaultText;
     show.addEventListener('click', () => {
         const imgContainer = document.getElementById('img');
         imgContainer.classList.toggle('aside__imgContainer--visible')
+        if(show.innerText === showDefaultText) {
+            return show.innerText = 'Hide Picture'
+        }
+        return show.innerText = showDefaultText
     })
 </script>
 </body>
