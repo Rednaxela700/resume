@@ -4,6 +4,7 @@
   padding: 0
 @at-root
   body
+    font-family: Lato, sans-serif
     font-size: 16px
 .wrapper
   display: block
@@ -11,3 +12,52 @@
   max-width: 210mm
   width: 100%
   margin: 0 auto
+  border: 1px solid #282c2f
+
+.header
+  background-color: #282c2f
+  color: #fff
+  padding: 1rem
+  &__heading
+    margin: 0
+    padding: .67em 0 .33em
+
+.main
+  display: flex
+  //padding: 1rem 0
+.article
+  padding: 1rem
+.aside
+  min-width: 250px
+  background-color: #f2f2f2
+  padding: 1rem
+  font-size: 14px
+  &__heading
+    margin: .3rem 0
+.section
+  &__heading
+    position: relative
+    margin: .5rem 0
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      height: 1px
+      background-color: gray
+      width: 100%
+      bottom: -3px
+.heading
+  font-family: Karla, sans-serif
+  text-transform: capitalize
+
+.list
+  &__container
+    padding: 0 0 0 1rem
+  &__item
+    //text-transform: capitalize
+    &--dotted
+      list-style: armenian
+.link
+  color: #282c2f
+.feature__heading--lowercase
+  text-transform: initial

@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: Lato, sans-serif;
   font-size: 16px;
 }
 
@@ -14,6 +15,69 @@ body {
   max-width: 210mm;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid #282c2f;
+}
+
+.header {
+  background-color: #282c2f;
+  color: #fff;
+  padding: 1rem;
+}
+.header__heading {
+  margin: 0;
+  padding: 0.67em 0 0.33em;
+}
+
+.main {
+  display: flex;
+}
+
+.article {
+  padding: 1rem;
+}
+
+.aside {
+  min-width: 250px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  font-size: 14px;
+}
+.aside__heading {
+  margin: 0.3rem 0;
+}
+
+.section__heading {
+  position: relative;
+  margin: 0.5rem 0;
+}
+.section__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+  bottom: -3px;
+}
+
+.heading {
+  font-family: Karla, sans-serif;
+  text-transform: capitalize;
+}
+
+.list__container {
+  padding: 0 0 0 1rem;
+}
+.list__item--dotted {
+  list-style: armenian;
+}
+
+.link {
+  color: #282c2f;
+}
+
+.feature__heading--lowercase {
+  text-transform: initial;
 }
 
 /*# sourceMappingURL=main.css.map */
