@@ -14,6 +14,7 @@
     <header class="header">
         <h1 class="heading header__heading">Aleksander Walczuk</h1>
         <h3 class="heading">Junior Frontend Developer</h3>
+        <a href="#" class="header__picture" id="header__picture--show">Show Picture</a>
     </header>
     <main class="main">
         <article class="article">
@@ -143,5 +144,13 @@
         </aside>
     </main>
 </div>
+<script>
+
+    const show = document.getElementById('header__picture--show');
+    show.addEventListener('click', () => {
+        const imgContainer = document.getElementById('img');
+        imgContainer.classList.toggle('aside__imgContainer--visible')
+    })
+</script>
 </body>
 </html>
