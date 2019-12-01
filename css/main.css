@@ -27,7 +27,7 @@ body {
 }
 .header__heading {
   margin: 0;
-  padding: 0.67em 0 0.33em;
+  padding: 0.33em 0;
 }
 .header__picture {
   position: absolute;
@@ -124,6 +124,11 @@ body {
 
 .icon__dot {
   padding: 0 0.05em;
+}
+
+.footer {
+  padding: 0.5rem 0 0;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
