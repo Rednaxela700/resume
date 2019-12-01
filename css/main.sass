@@ -9,18 +9,26 @@
 .wrapper
   display: block
   height: 100%
-  max-width: 210mm
   width: 100%
+  max-width: 210mm
+  max-height: 297mm
   margin: 0 auto
   border: 1px solid #282c2f
 
 .header
+  position: relative
   background-color: #282c2f
   color: #fff
   padding: 1rem
   &__heading
     margin: 0
     padding: .67em 0 .33em
+  &__picture
+    position: absolute
+    right: 0
+    padding: 1rem
+    bottom: 0
+    color: #ffffff
 
 .main
   display: flex
@@ -33,7 +41,16 @@
   padding: 1rem
   font-size: 14px
   &__heading
-    margin: .3rem 0
+    margin: .5rem 0
+  &__imgContainer
+    display: none
+    max-width: 234px
+    max-height: 235px
+    &--visible
+      display: block
+  &__img
+    max-width: 218px
+
 .section
   &__heading
     position: relative
@@ -53,11 +70,29 @@
 .list
   &__container
     padding: 0 0 0 1rem
-  &__item
-    //text-transform: capitalize
     &--dotted
-      list-style: armenian
+      padding: 0
+    &--hobbies
+      display: flex
+      list-style: none
+      justify-content: space-between
+      align-items: center
+  &__item
+    margin: 0 0.5rem
+    &--dotted
+      display: flex
+      justify-content: space-between
+      list-style: none
+      padding: .1rem 0
+      margin: 0
 .link
   color: #282c2f
-.feature__heading--lowercase
-  text-transform: initial
+.feature__heading
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: .6rem 0
+  &--lowercase
+    text-transform: initial
+.icon__dot
+  padding: 0 .05em

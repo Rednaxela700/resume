@@ -12,13 +12,15 @@ body {
 .wrapper {
   display: block;
   height: 100%;
-  max-width: 210mm;
   width: 100%;
+  max-width: 210mm;
+  max-height: 297mm;
   margin: 0 auto;
   border: 1px solid #282c2f;
 }
 
 .header {
+  position: relative;
   background-color: #282c2f;
   color: #fff;
   padding: 1rem;
@@ -26,6 +28,13 @@ body {
 .header__heading {
   margin: 0;
   padding: 0.67em 0 0.33em;
+}
+.header__picture {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  bottom: 0;
+  color: #ffffff;
 }
 
 .main {
@@ -43,7 +52,18 @@ body {
   font-size: 14px;
 }
 .aside__heading {
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
+}
+.aside__imgContainer {
+  display: none;
+  max-width: 234px;
+  max-height: 235px;
+}
+.aside__imgContainer--visible {
+  display: block;
+}
+.aside__img {
+  max-width: 218px;
 }
 
 .section__heading {
@@ -68,16 +88,42 @@ body {
 .list__container {
   padding: 0 0 0 1rem;
 }
+.list__container--dotted {
+  padding: 0;
+}
+.list__container--hobbies {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.list__item {
+  margin: 0 0.5rem;
+}
 .list__item--dotted {
-  list-style: armenian;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.1rem 0;
+  margin: 0;
 }
 
 .link {
   color: #282c2f;
 }
 
+.feature__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.6rem 0;
+}
 .feature__heading--lowercase {
   text-transform: initial;
+}
+
+.icon__dot {
+  padding: 0 0.05em;
 }
 
 /*# sourceMappingURL=main.css.map */
