@@ -35,6 +35,8 @@
   //padding: 1rem 0
 .article
   padding: 1rem
+  &__header
+    font-size: 14px
 .aside
   min-width: 250px
   background-color: #f2f2f2
@@ -44,19 +46,22 @@
     max-width: 220px
     padding: 0 1rem
   &__wrapper
+
+    padding: .6rem 1rem
+    &--nohover
+      //&:hover
+        background-color: #f2f2f2!important
+        color: #282c2f!important
+
+      & .link
+        color: #f2f2f2
+  &__link
     display: flex
     justify-content: space-between
     align-items: center
-    padding: .6rem 1rem
-    &--nohover
-      &:hover
-        background-color: #f2f2f2!important
-        color: #282c2f!important
-    &:hover
-      background-color: #282c2f
-      color: #f2f2f2
-      & .link
-        color: #f2f2f2
+    text-decoration: none
+    & .heading
+      color: #282c2f
   &__heading
     padding: 0
   &__imgContainer
@@ -106,6 +111,7 @@
       margin: 0
 .link
   color: #282c2f
+  text-decoration: underline
 .feature__heading
   display: flex
   justify-content: space-between
@@ -119,6 +125,9 @@
   &__aside
     padding: 0 .2em
     font-size: 16px
+    color: #282c2f
 .footer
+  display: flex
   padding: .5rem 0 0
-  font-size: 10px
+  align-items: flex-end
+  font-size: 12px
